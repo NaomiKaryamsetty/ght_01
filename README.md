@@ -1,2 +1,1 @@
-# ght_01
- git HTML tests 01
+Sandbox where I'm (re)learning HTML and web development!
