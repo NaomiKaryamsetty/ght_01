@@ -1,0 +1,284 @@
+body{
+	margin: 0 10%;
+	box-sizing: border-box;
+}
+
+/* Responsive styling */
+
+/* delineating sections and the percentage of the screen they take up */
+.secThird {
+  box-sizing: border-box;
+  padding: 2%;
+  width: 33%;
+  float: left;
+}
+.secTwoThird {
+	box-sizing: border-box;
+  padding: 2%;
+  width: 67%;
+  float: left;
+}
+
+.secHalf {
+	box-sizing: border-box;
+  padding: 2%;
+	width: 50%;
+	float: left;
+}
+
+/*I thought this would help make things align to the bottom of their containers but it isn't working*/
+/*.row{
+	 display: flex;
+}*/
+
+/* clears everything after a row */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+/* <uniquifier>: Use a unique and descriptive class name*/
+/* <weight>: Use a value from 300 to 700 */
+
+/*.space-grotesk-body {
+  font-family: "Space Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}*/
+
+.textPink {
+	color: #FF27E9;
+	margin: 5% 15%;
+}
+
+.sLimeGreen {
+	color: #E1FF00;
+}
+
+.textDGrey {
+	color: #A3A3A3;
+}
+
+.textLGrey {
+	color: #E6E6E6;
+}
+
+.space-mono-regular {
+  font-family: "Space Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.space-mono-bold {
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.space-mono-regular-italic {
+  font-family: "Space Mono", monospace;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.space-mono-bold-italic {
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.subheading{
+font-family: "Space Mono", monospace;
+	font-size: 28px;
+}
+
+header{
+	font-family: "Space Mono", monospace;
+	font-size: 24px;
+	text-align: right;
+	padding-top: 1%;
+}
+
+p{
+	font-family: "Space Grotesk", sans-serif;
+	font-size: 24px;
+	line-height: 1.2;
+}
+
+ul{
+	font-family: "Space Grotesk", sans-serif;
+	font-size: 24px;
+}
+
+ol{
+	font-family: "Space Grotesk", sans-serif;
+	font-size: 24px;
+}
+
+h1{
+	font-family: "Space Mono", monospace;
+	font-weight: 400;
+	font-size: 64px;
+	line-height: 1.2;
+	margin: 0;
+}
+
+h2{
+	font-family: "Space Mono", monospace;
+	font-size: 36px;
+	line-height: 1.2;
+	margin: 0;
+}
+
+h3{
+	font-family: "Space Mono", monospace;
+	font-size: 24px;
+	line-height: 1.2;
+	margin: 0;
+}
+
+.limeGreenCallout{
+	background-color: #E1FF00;
+}
+
+img{
+	max-width: 100%;
+}
+
+a{
+	font-family: "Space Mono", monospace;
+	color: #000000;
+	text-underline-offset: 30%;
+	text-decoration-color: #FF27E9;
+	text-decoration-thickness: 15%;
+}
+
+a:hover {
+	background-color: #E1FF00;
+}
+
+a:active {
+	font-weight: 700;
+}
+
+form{
+	font-family: "Space Grotesk", sans-serif;
+	font-size: 24px;
+}
+
+footer{
+	text-align: center;
+	background-color: #FF27E9;
+	font-family: "Space Mono", monospace;
+	font-size: 12px;
+	color: #000000;
+	margin: initial;
+}
+
+footer a{
+	color: #000000;
+	text-underline-offset: initial;
+	text-decoration-color: initial;
+	text-decoration-thickness: initial;
+}
+
+footer a:hover {
+	font-style: italic;
+	background-color: #FF27E9;
+}
+
+/* -- Form formatting -- */
+
+/* Defining a form section so that only label and input are in a single row */
+
+.formSec{
+	padding-bottom: 4%;
+}
+
+.formSec::after{
+	content: "";
+  clear: both;
+  display: table;
+}
+
+/* Form element formatting */
+
+/*pink #FF27E9 limeGreen #E1FF00*/
+
+/* Formatting checkboxes and radio buttons: Without hiding and redefining the class, the border, color etc. can't be changed; height and width can */
+
+input[type=checkbox], input[type=radio]{
+	height: 24px;
+	width: 24px;
+}
+
+input[type=text]{
+	width: 100%;
+	padding: 2%;
+	border: 0px;
+	border-radius: 0;
+	box-shadow: 0px 0px 5px #FF27E9;
+}
+
+input[type=text]:focus{
+	outline: 2px solid #FF27E9;
+}
+
+input[type=submit]{
+	font-family: "Space Mono", monospace;
+	font-weight: 400;
+	font-size: 64px;
+	text-decoration: underline;
+	text-underline-offset: 30%;
+	text-decoration-color: #FF27E9;
+	text-decoration-thickness: 15%;
+	background-color: white;
+	border: none;
+	box-align: center;
+}
+
+input[type=submit]:hover{
+	background-color: #E1FF00;
+}
+
+input[type=reset]{
+	font-family: "Space Mono", monospace;
+	font-weight: 400;
+	font-size: 24px;
+	text-decoration: underline;
+	text-underline-offset: 30%;
+	text-decoration-color: #FF27E9;
+	text-decoration-thickness: 15%;
+	background-color: white;
+	border: none;
+	box-align: center;
+}
+
+input[type=reset]:hover{
+	background-color: #E1FF00;
+}
+
+/* Responsive styling: Setting breakpoint!! */
+/* This has to be at the end because it has to be after the classes, tags etc whose styles are defined */
+
+@media screen and (max-width:800px){
+	.secHalf, .secThird, .secTwoThird{
+		width: 100%;
+		float: left;
+	}
+	h1{
+		font-size: 48px;
+	}
+}
+
+@media screen and (max-width:1000px){
+	h1{
+		font-size: 48px;
+	}
+	.subheading{
+		font-size: 24px;
+	}
+}

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<title>Contact Mashika!</title>
+
+	<!-- Fonts -->
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="styling.css">
+	<link rel="icon" type="image/x-icon" href="imgs/favicon01.png">
+
+</head>
+
+<body>
+
+	<header>
+		<a href="index.html">Home</a>
+		<strong><a href="contact.html">Contact</a></strong>
+	</header>
+
+	<h1 style="padding: 2% 0%;">Design Graphically With Mashika ✨</h1>
+
+	<div class="row">
+		<div class="secHalf" style="background-color: #E1FF00;">
+			<h2>What to expect</h2>
+				<ol>
+					<li>Fill in the form below</li>
+					<li>Wait for a reply from me</li>
+					<li>... maybe keep waiting</li>
+					<li>I’ll set up a consultation call with you!</li>
+					<li>We can take things forward from there. <del>Or not.</del></li>
+				</ol>
+		</div>
+		<div class="secHalf">
+			<img src="imgs/ght_01.2.png" alt="A drawing of a computer screen, with a mouse hovering over a button that reads 'ugh'">
+		</div>
+	</div>
+
+	<h2>Fill in this form to get in touch with me for your design project!</h2>
+	<form>
+		
+		<!-- Reset -->
+		<div align="right">
+			<input type="reset" name="resetBtn">
+		</div>
+
+		<!-- Client's name -->
+		<div class="formSec">
+			<span class="secThird"><label for="ClientName">Your name</label></span>
+			<span class="secTwoThird"><input type="text" name="ClientName" id="ClientName"></span>
+		</div>
+
+		<!-- Client's organisation -->
+		<div class="formSec">
+			<span class="secThird">
+				<label for="ClientOrg">Your organisation (Include a link [if it exists])</label>
+			</span>
+
+			<span class="secTwoThird">
+				<input type="text" name="ClientOrg" id="ClientOrg">
+			</span>
+		</div>
+
+		<!-- Client's email ID -->
+		<div class="formSec">
+			<span class="secThird"><label for="ClientEmail">Your email ID</label></span>
+			<span class="secTwoThird"><input type="text" name="ClientEmail" id="ClientEmail"></span>
+		</div>
+
+		<!-- WorkOrder or type of work -->
+		<!-- I think 'name' can be repeated but 'id' has to be unique? -->
+		<div class="formSec">
+			<span class="secThird">What are you enquiring for? (Select all that apply)<br></span>
+			
+			<span class="secTwoThird">
+				<input type="checkbox" name="WorkOrder" id="WorkOrder1">
+				<label for="WorkOrder1">Logo</label><br>
+
+				<input type="checkbox" name="WorkOrder" id="WorkOrder2">
+				<label for="WorkOrder2">Website</label><br>
+
+				<input type="checkbox" name="WorkOrder" id="WorkOrder3">
+				<label for="WorkOrder3">Print collaterals</label><br>
+
+				<input type="checkbox" name="WorkOrder" id="WorkOrder4">
+				<label for="WorkOrder4">Online collaterals</label><br>
+
+				<input type="checkbox" name="WorkOrder" id="WorkOrder5">
+				<label for="WorkOrder5">Other:</label>
+				<label for="WorkOrder5_text"> Type below</label>
+				<input type="text" name="WorkOrder" id="WorkOrder5_text">
+			</span>
+		</div>
+
+		<!-- Exposure -->
+		<div class="formSec">
+			<span class="secThird">Is the pay ‘exposure’?</span>
+			
+			<span class="secTwoThird">
+				<input type="radio" name="exposure" id="NoExposure">
+				<label for="NoExposure">No</label>
+
+				<input type="radio" name="exposure" id="YesExposure">
+				<label for="YesExposure">Yes</label>
+			</span>
+		</div>
+
+		<!-- Urgent -->
+		<div class="formSec">
+			<span class="secThird">Is the project ‘urgent’?</span>
+			
+			<span class="secTwoThird">
+				<input type="radio" name="urgent" id="YesUrgent">
+				<label for="YesUrgent">Yes</label>
+
+				<input type="radio" name="urgent" id="RlyUrgent">
+				<label for="RlyUrgent">Really yes</label>
+
+				<input type="radio" name="urgent" id="NoUrgent">
+				<label for="NoUrgent">No</label>
+			</span>
+		</div>
+
+		<!-- Reset (repeat) -->
+		<div align="center">
+			<input type="reset" name="resetBtn">
+		</div>
+
+		<!-- Submit buttom -->
+		<div align="center">
+			<input type="submit" name="submit" value="Submit" style="">
+		</div>
+
+	</form>
+
+	<p align="center" style="font-size: 16px; color: ##797676;">‘Submit’ button not working? Please consider paying for work! Thank you!!</p>
+
+	<footer>
+		Hand-coded by Naomi Karyamsetty • Test project for <a href="https://www.skillshare.com/en/classes/hand-code-your-first-website-html-css-basics/1575146775/" target="_blank">TapTapKaboom’s Skillshare class</a>  • Last updated 02 November 2024
+	</footer>
+
+</body>
+</html>
