@@ -283,4 +283,7 @@ input[type=reset]:hover{
 	.subheading{
 		font-size: 24px;
 	}
+	input[type=submit]{
+		color: #000000;
+	}
 }
