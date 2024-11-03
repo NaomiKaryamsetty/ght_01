@@ -174,19 +174,19 @@ footer{
 	background-color: #FF27E9;
 	font-family: "Space Mono", monospace;
 	font-size: 12px;
-	color: #000000;
+	color: #E6E6E6;
 	margin: initial;
 }
 
 footer a{
-	color: #000000;
+	color: #E6E6E6;
 	text-underline-offset: initial;
 	text-decoration-color: initial;
 	text-decoration-thickness: initial;
 }
 
 footer a:hover {
-	font-style: italic;
+	color: #ffffff;
 	background-color: #FF27E9;
 }
 
